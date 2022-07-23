@@ -6,7 +6,7 @@ Welcome! This is a reprository for hobby projects to practice my coding. For col
 
 Available in Dutch and English. When starting the game choose a language.
 
-###### un in your terminal the following line to start the game.
+##### Run in your terminal the following line to start the game.
 
 English game-start: `./tic-tac-toe eng`
 
