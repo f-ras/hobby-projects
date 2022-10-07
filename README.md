@@ -2,7 +2,7 @@
 
 Welcome! This is a reprository for hobby projects to practice my coding. For collabs or questions feel free to contact me.
 
-## tic-tac-toe
+## tic-tac-toe: This is my first creation of a game in C.
 
 Available in Dutch and English. When starting the game choose a language.
 
