@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define	_CLEARSCREEN	"\e[H\e[J"
+
 void	gamereset(int input[]);
 void	draw_game(int input[], char help);
 void	taketurns_eng(int input[], char instr, char *playerX, char *playerO);
@@ -36,7 +38,7 @@ void    taketurns_eng(int input[], char instr, char *playerX, char *playerO)
     {
         draw_game(input, instr);
         turn_plX_eng(input, playerX);
-        system("clear");
+        printf(_CLEARSCREEN);
         if(checkwon(input) == 1)
             endgame_eng(input, 1, playerX, playerO);
         turn++;
@@ -44,7 +46,7 @@ void    taketurns_eng(int input[], char instr, char *playerX, char *playerO)
         if (turn == 9)
             break;
         turn_plO_eng(input, playerO);
-        system("clear");
+        printf(_CLEARSCREEN);
         if(checkwon(input) == 2)
             endgame_eng(input, 1, playerX, playerO);
         turn++;

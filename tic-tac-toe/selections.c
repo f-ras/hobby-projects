@@ -5,7 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_NAME_SZ 128
+#define	MAX_NAME_SZ		128
+#define	_CLEARSCREEN	"\e[H\e[J"
 
 void    player_select(char *player1, char *player2, int language);
 void    continue_or_not_eng(int input[], char *playerX, char *playerO);
@@ -18,13 +19,13 @@ int     language_select(int argc, char *argv)
 {
     if (argc == 2 && strcasecmp (argv, "eng") == 0)
     {	
-        system("clear");
+        printf(_CLEARSCREEN);
         printf("This is Tic-tac-toe.\n\n");
         return (1);
     }
     else if (argc == 2 && strcasecmp(argv, "nl") == 0)
     {
-        system("clear");;
+        printf(_CLEARSCREEN);;
         printf("Dit is boter kaas en eieren.\n\n");
         return (2);
     }
@@ -52,7 +53,7 @@ void    player_select(char *playerX, char *playerO, int language)
         printf("Enter name player 2 (O): ");
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
-        system("clear");
+		printf(_CLEARSCREEN);
         printf("Welcome %s and %s. Have fun! And don't get beated.\n\n",
             playerX, playerO);
     }
@@ -64,7 +65,7 @@ void    player_select(char *playerX, char *playerO, int language)
         printf("Voer naam in speler 2 (O): ");
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
-        system("clear");
+        printf(_CLEARSCREEN);
         printf("Welkom %s en %s. ", playerX, playerO);
         printf("Veel plezier! En laat je niet kapot maken.\n\n");
     }
@@ -86,7 +87,7 @@ void    continue_or_not_eng(int input[], char *playerX, char *playerO)
         printf("Same players? Y/N: ");
     scanf(" %c", &yn);
     yn = input_yesno_errorcheck(yn, 1);
-        system("clear");
+        printf(_CLEARSCREEN);
     if	(yn == 'y' || yn == 'Y')
         game_nl(input, playerX, playerO);
     else
@@ -112,7 +113,7 @@ void    continue_or_not_nl(int input[], char *playerX, char *playerO)
         printf("Zelfde spelers? J/N: ");
     scanf(" %c", &yn);
     yn = input_yesno_errorcheck(yn, 2);
-        system("clear");
+        printf(_CLEARSCREEN);
     if	(yn == 'j' || yn == 'J')
         game_nl(input, playerX, playerO);
     else

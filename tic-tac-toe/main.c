@@ -3,7 +3,7 @@
 
 #include <locale.h>
 
-#define MAX_NAME_SZ 128
+#define MAX_NAME_SZ		128
 
 int	language_select(int argc, char *argv);
 void    player_select(char *player1, char *player2, int language);
