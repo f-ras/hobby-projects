@@ -19,13 +19,13 @@ int     language_select(int argc, char *argv)
 {
     if (argc == 2 && strcasecmp (argv, "eng") == 0)
     {	
-        printf(_CLEARSCREEN);
+        system("clear");
         printf("This is Tic-tac-toe.\n\n");
         return (1);
     }
     else if (argc == 2 && strcasecmp(argv, "nl") == 0)
     {
-        printf(_CLEARSCREEN);;
+        system("clear");
         printf("Dit is boter kaas en eieren.\n\n");
         return (2);
     }
