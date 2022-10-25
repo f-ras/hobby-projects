@@ -48,9 +48,11 @@ void    player_select(char *playerX, char *playerO, int language)
     if (language == 1)
     {
         printf("Enter name player 1 (X): ");
+		fflush(stdin);
         fgets(playerX, MAX_NAME_SZ, stdin);
         playerX[strlen (playerX) - 1] = '\0';
         printf("Enter name player 2 (O): ");
+		fflush(stdin);
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
 		printf(_CLEARSCREEN);
@@ -60,9 +62,11 @@ void    player_select(char *playerX, char *playerO, int language)
     if (language == 2)
     {
         printf("Voer naam in speler 1 (X): ");
+		fflush(stdin);
         fgets(playerX, MAX_NAME_SZ, stdin);
         playerX[strlen (playerX) - 1] = '\0';
         printf("Voer naam in speler 2 (O): ");
+		fflush(stdin);
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
         printf(_CLEARSCREEN);
