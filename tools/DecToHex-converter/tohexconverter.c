@@ -7,9 +7,9 @@
 //      (   ) (                                                               //
 //     _______)_                             tohexconverter.c                 //
 //  .-'---------|	By: Ferry Ras                                             //
-// ( C|/\GitHub/|	                                                          //
-//  '-./\f-ras\/|	E-mail:		ferryras@gmail.com                            //
-//    '_________'	LinkedIn:	https://www.linkedin.com/in/ferryras/         //
+// ( C|/\GitHub/|                                                             //
+//  '-./\f-ras\/|	E-mail:     ferryras@gmail.com                            //
+//    '_________'	LinkedIn:   https://www.linkedin.com/in/ferryras/         //
 //     '-------'                                                              //
 
 #include <stdio.h>
