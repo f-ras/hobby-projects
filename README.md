@@ -4,8 +4,7 @@ Welcome! This is a reprository for hobby projects to practice my coding. For col
 
 ## Games
 
-### • Tic-tac-toe 
-#### ➼ my first creation of a game in C.
+### • Tic-tac-toe #### ➼ my first creation of a game in C.
 
 Available in Dutch and English. When starting the game choose a language.
 
@@ -17,8 +16,7 @@ Dutch game-start: `./tic-tac-toe nl`
 
 ## Tools
 
-### • Dectohex-converter
-#### ➼ tool to convert decimals to hexadecimals.
+### • Dectohex-converter #### ➼ tool to convert decimals to hexadecimals.
 
 Current output is currently all hexadecimal numbers between: 0 // 0x0 => .. <= 4096 // 0x1000.  
 Source code can output up to unsigned long long max: 1,844,674,407,370,955,1615 // 0xffffffffffffffff.
