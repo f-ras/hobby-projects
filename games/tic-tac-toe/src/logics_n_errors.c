@@ -8,8 +8,8 @@
 //     _______)_                            logics_n_errors.c                 //
 //  .-'---------|                                                             //
 // ( C|/\GitHub/|                                                             //
-//  '-./\f-ras\/|	E-mail:     ferryras@gmail.com                            //
-//    '_________'	LinkedIn:   https://www.linkedin.com/in/ferryras/         //
+//  '-./\f-ras\/|   E-mail:     ferryras@gmail.com                            //
+//    '_________'   LinkedIn:   https://www.linkedin.com/in/ferryras/         //
 //     '-------'                                                              //
 // Project by: Ferry Ras. Git: f-ras                                          //
 // Boter Kaas en Eieren || Tic Tac Toe                                        //
