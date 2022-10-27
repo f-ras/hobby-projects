@@ -4,7 +4,7 @@ Welcome! This is a reprository for hobby projects to practice my coding. For col
 
 ## Games
 
-### tic-tac-toe: My first creation of a game in C.
+### Tic-tac-toe: My first creation of a game in C.
 
 Available in Dutch and English. When starting the game choose a language.
 
@@ -16,4 +16,4 @@ Dutch game-start: `./tic-tac-toe nl`
 
 ## Tools
 
-### dectohex-converter: Tool to convert decimals to hexadecimals.
+### Dectohex-converter: Tool to convert decimals to hexadecimals.
