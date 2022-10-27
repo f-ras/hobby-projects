@@ -4,7 +4,7 @@ Welcome! This is a reprository for hobby projects to practice my coding. For col
 
 ## Games
 
-### • Tic-tac-toe &nbsp; &nbsp; ➼ my first creation of a game in C.
+### • Tic-tac-toe &nbsp; &nbsp; ➼ my first game in C.
 
 Available in Dutch and English. When starting the game choose a language.
 
