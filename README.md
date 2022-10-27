@@ -18,7 +18,7 @@ Dutch game-start: `./tic-tac-toe nl`
 
 ### Dectohex-converter: Tool to convert decimals to hexadecimals.
 
-Current output is currently all hexadecimal numbers <= 4096 // 0x1000.
+Current output is currently all hexadecimal numbers <= 4096 // 0x1000.  
 Source code can output up to: long long unsigned max (1,844,674,407,370,955,1615 // 0xffffffffffffffff).
 
 Output is given in the following format: "[DEC] - [HEX]"
