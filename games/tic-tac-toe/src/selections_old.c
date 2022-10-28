@@ -5,7 +5,7 @@
 //      (                                                                     //
 //       )                                                                    //
 //      (   ) (                                                               //
-//     _______)_                                       main.c                 //
+//     _______)_                                 selections.c                 //
 //  .-'---------|                                                             //
 // ( C|/\GitHub/|                                                             //
 //  '-./\f-ras\/|   E-mail:     ferryras@gmail.com                            //
@@ -14,41 +14,43 @@
 // Project by: Ferry Ras. Git: f-ras                                          //
 // Boter Kaas en Eieren || Tic Tac Toe                                        //
 
-#include <locale.h>
 
-#define MAX_NAME_SZ		256
+	//	--- This function has been replaced. Check:	selections.c
 
-int     language_select(void);
-void    player_select(char *player1, char *player2, int language);
-void    gamereset(int input[]);
-void    game_eng(int input[], char *playerX, char *playerO);
-void    game_nl(int input[], char *playerX, char *playerO);
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int     main(void) 
+#define	MAX_NAME_SZ		128
+#define	_CLEARSCREEN	"\e[H\e[J"
+
+
+int     language_select_old(int argc, char *argv)
 {
-    char    playerX[MAX_NAME_SZ];
-    char    playerO[MAX_NAME_SZ];
-    int     input[9];
-    int     language; // ENG = 1, NL = 2.
-
-    // language = language_select_old(); -- Replaced.
-    //                                      Keeping for reference purposes.
-    language = language_select();
-    player_select(playerX, playerO, language);
-    gamereset(input);
-    setlocale(LC_ALL, "");
-    if (language == 1)
-        game_eng(input, playerX, playerO);
-    if (language == 2)
-        game_nl(input, playerX, playerO);
-    return (0);
+    if (argc == 2 && strcasecmp (argv, "eng") == 0)
+    {	
+        system("clear");
+        printf("This is Tic-tac-toe.\n\n");
+        return (1);
+    }
+    else if (argc == 2 && strcasecmp(argv, "nl") == 0)
+    {
+        system("clear");
+        printf("Dit is boter kaas en eieren.\n\n");
+        return (2);
+    }
+    else if (argc != 2)
+    {
+        printf("Add one argument to select language.\n");
+        printf("Voeg één arument toe om taal te selecteren.\nNL / ENG?\n");
+        exit(0);
+    }
+    else
+    {
+        printf("Incorrect input - Onjuist invoer.\n");
+        printf("Select Language - Selecteer Taal.\nNL / ENG?\n");
+        exit(0);
+    }
 }
-
-void    gamereset(int input[])
-{
-    int	i;
-    
-    i = 0;
-    while (i < 9)
-        input[i++] = 0;
-}
+*/

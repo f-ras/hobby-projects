@@ -28,7 +28,7 @@ int	    checkwon(int input[]);
 void    endgame_nl(int input[], int who_won, char *playerX, char *playerO);
 void    continue_or_not_nl(int input[], char *playerX, char *playerO);
 int     taken_or_outof_scope(int input[], int pos, int language, int ret);
-char    input_yesno_errorcheck(char instr, int language);
+int		input_yesno_errorcheck(char instr, int language);
 
 void    game_nl(int input[], char *playerX, char *playerO)
 {
@@ -36,6 +36,7 @@ void    game_nl(int input[], char *playerX, char *playerO)
     
     printf("Willen jullie een instructie-kaart bij het spel? J/N: ");
     scanf(" %c", &instr);
+	printf("\n");
     instr = input_yesno_errorcheck(instr, 2);
     gamereset(input);
     taketurns_nl(input, instr, playerX, playerO);

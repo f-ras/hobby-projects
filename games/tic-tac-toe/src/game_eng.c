@@ -35,6 +35,7 @@ void    game_eng(int input[], char *playerX, char *playerO)
     char    instr;
     
     printf("Do you want an instruction-map in game? Y/N: ");
+	printf("\n");
     scanf(" %c", &instr);
     instr = input_yesno_errorcheck(instr, 1);
     gamereset(input);

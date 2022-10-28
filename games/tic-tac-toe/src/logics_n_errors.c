@@ -39,7 +39,7 @@ int     checkwon(int input[])
     return(0);
 }
 
-char	taken_or_outof_scope(int input[], int pos, int language, int ret)
+int	taken_or_outof_scope(int input[], int pos, int language, int ret)
 {
     if (language == 1)
     {

@@ -18,7 +18,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define	MAX_NAME_SZ		128
+#define	MAX_NAME_SZ		256
 #define	_CLEARSCREEN	"\e[H\e[J"
 
 void    player_select(char *player1, char *player2, int language);
@@ -28,32 +28,36 @@ char    input_yesno_errorcheck(char instr, int language);
 void    game_eng(int input[], char *playerX, char *playerO);
 void    game_nl(int input[], char *playerX, char *playerO);
 
-int     language_select(int argc, char *argv)
+int     language_select(void)
 {
-    if (argc == 2 && strcasecmp (argv, "eng") == 0)
-    {	
-        system("clear");
+    char input[128];
+
+    printf(_CLEARSCREEN);
+    printf("Choose your language. || ");
+    printf("Kies een taal.\nNL / ENG?\n\n");
+    fflush(stdin);
+    fgets(input, 128, stdin);
+    while (strcasecmp(input, "eng\n") != 0 && strcasecmp(input, "nl\n") != 0)
+    {
+        printf(_CLEARSCREEN);
+        printf("Incorrect input - Onjuist invoer.\n");
+        printf("Select Language - Selecteer Taal.\n\nNL / ENG?\n\n");
+        fflush(stdin);
+        fgets(input, 128, stdin);
+    }
+    if (strcasecmp(input, "eng\n") == 0)
+    {
+        printf(_CLEARSCREEN);
         printf("This is Tic-tac-toe.\n\n");
         return (1);
     }
-    else if (argc == 2 && strcasecmp(argv, "nl") == 0)
+    if (strcasecmp(input, "nl\n") == 0)
     {
-        system("clear");
+        printf(_CLEARSCREEN);
         printf("Dit is boter kaas en eieren.\n\n");
         return (2);
     }
-    else if (argc != 2)
-    {
-        printf("Add one argument to select language.\n");
-        printf("Voeg één arument toe om taal te selecteren.\nNL / ENG?\n");
-        exit(0);
-    }
-    else
-    {
-        printf("Incorrect input - Onjuist invoer.\n");
-        printf("Select Language - Selecteer Taal.\nNL / ENG?\n");
-        exit(0);
-    }
+    return 0;
 }
 
 void    player_select(char *playerX, char *playerO, int language)
@@ -61,25 +65,25 @@ void    player_select(char *playerX, char *playerO, int language)
     if (language == 1)
     {
         printf("Enter name player 1 (X): ");
-		fflush(stdin);
+        fflush(stdin);
         fgets(playerX, MAX_NAME_SZ, stdin);
         playerX[strlen (playerX) - 1] = '\0';
         printf("Enter name player 2 (O): ");
-		fflush(stdin);
+        fflush(stdin);
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
-		printf(_CLEARSCREEN);
+        printf(_CLEARSCREEN);
         printf("Welcome %s and %s. Have fun! And don't get beated.\n\n",
             playerX, playerO);
     }
     if (language == 2)
     {
         printf("Voer naam in speler 1 (X): ");
-		fflush(stdin);
+        fflush(stdin);
         fgets(playerX, MAX_NAME_SZ, stdin);
         playerX[strlen (playerX) - 1] = '\0';
         printf("Voer naam in speler 2 (O): ");
-		fflush(stdin);
+        fflush(stdin);
         fgets(playerO, MAX_NAME_SZ, stdin);
         playerO[strlen (playerO) - 1] = '\0';
         printf(_CLEARSCREEN);
@@ -122,7 +126,7 @@ void    continue_or_not_nl(int input[], char *playerX, char *playerO)
     scanf(" %c", &yn);
     yn = input_yesno_errorcheck(yn, 2);
     if (yn == 'n' || yn == 'N')
-    {	
+    {
         printf("Bedankt voor het spelen. Tot ziens! Groet Ferry.\n");
         exit(0);
     }
@@ -131,7 +135,7 @@ void    continue_or_not_nl(int input[], char *playerX, char *playerO)
     scanf(" %c", &yn);
     yn = input_yesno_errorcheck(yn, 2);
         printf(_CLEARSCREEN);
-    if	(yn == 'j' || yn == 'J')
+    if (yn == 'j' || yn == 'J')
         game_nl(input, playerX, playerO);
     else
     {
