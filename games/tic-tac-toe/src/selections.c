@@ -101,7 +101,11 @@ void    continue_or_not_eng(int input[], char *playerX, char *playerO)
     yn = input_yesno_errorcheck(yn, 1);
     if (yn == 'n' || yn == 'N')
     {	
+        printf(_CLEARSCREEN);
         printf("Thanks for playing. See you! Cheers Ferry.\n");
+        system("read -n 1 -s -p \"Press any key to exit...\"");
+        printf(_CLEARSCREEN);
+        exit(0);
         exit(0);
     }
     else
@@ -127,7 +131,10 @@ void    continue_or_not_nl(int input[], char *playerX, char *playerO)
     yn = input_yesno_errorcheck(yn, 2);
     if (yn == 'n' || yn == 'N')
     {
+        printf(_CLEARSCREEN);
         printf("Bedankt voor het spelen. Tot ziens! Groet Ferry.\n");
+        system("read -n 1 -s -p \"Druk op een toets om te sluiten...\"");
+        printf(_CLEARSCREEN);
         exit(0);
     }
     else
