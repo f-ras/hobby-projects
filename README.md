@@ -1,6 +1,6 @@
 # hobby-projects
 
-Welcome! This is a reprository for hobby projects to practice my coding. For collabs or questions feel free to contact me.
+Welcome! This is a repository for hobby projects to practice my coding. For collabs or questions feel free to contact me.
 
 ## Games
 
