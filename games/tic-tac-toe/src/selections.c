@@ -1,15 +1,15 @@
-//                                                                            //
-//                                                                  ___ __    //
-//                                                                 (_  /__)   //
-//                                                                 /  / (     //
-//      (                                                                     //
-//       )                                                                    //
-//      (   ) (                                                               //
-//     _______)_                                 selections.c                 //
-//  .-'---------|                                                             //
-// ( C|/\GitHub/|                                                             //
-//  '-./\f-ras\/|   E-mail:     ferryras@gmail.com                            //
-//    '_________'   LinkedIn:   https://www.linkedin.com/in/ferryras/         //
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   selections.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: )                                            +#+                     */
+/*                                                   +#+                      */
+/*   Created: Invalid date        by               #+#    #+#                 */
+/*   Updated: 2023/04/24 17:06:48 by fras          ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 //     '-------'                                                              //
 // Project by: Ferry Ras. Git: f-ras                                          //
 // Boter Kaas en Eieren || Tic Tac Toe                                        //
@@ -114,7 +114,7 @@ void    continue_or_not_eng(int input[], char *playerX, char *playerO)
     yn = input_yesno_errorcheck(yn, 1);
         printf(_CLEARSCREEN);
     if	(yn == 'y' || yn == 'Y')
-        game_nl(input, playerX, playerO);
+        game_eng(input, playerX, playerO);
     else
     {
         player_select(playerX, playerO, 1);
