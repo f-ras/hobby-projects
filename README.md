@@ -16,3 +16,9 @@ Output is currently showing all hexadecimal numbers between: 0 // 0x0 => .. <= 4
 Code can output up to unsigned long long max: 1,844,674,407,370,955,1615 // 0xffffffffffffffff.
 
 Output is given in the following format: "[DEC] - [HEX]".
+
+## Simulations
+
+### • HundredPrisoners &nbsp; &nbsp; ➼ simulation comparing the loop stragegy and random guessing.
+
+Recreate the following situation https://www.youtube.com/watch?v=iSNsgj1OCLA in a simulation.
