@@ -1,3 +1,17 @@
+//                                                                            //
+//                                                                  ___ __    //
+//                                                                 (_  /__)   //
+//                                                                 /  / (     //
+//      (                                                                     //
+//       )                                                                    //
+//      (   ) (                                                               //
+//     _______)_                             tohexconverter.c                 //
+//  .-'---------|	By: Ferry Ras                                             //
+// ( C|/\GitHub/|                                                             //
+//  '-./\f-ras\/|	E-mail:     ferryras@gmail.com                            //
+//    '_________'	LinkedIn:   https://www.linkedin.com/in/ferryras/         //
+//     '-------'                                                              //
+
 #ifndef HUNDPRIS_H
 # define HUNDPRIS_H
 
