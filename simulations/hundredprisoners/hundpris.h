@@ -5,7 +5,7 @@
 //      (                                                                     //
 //       )                                                                    //
 //      (   ) (                                                               //
-//     _______)_                             tohexconverter.c                 //
+//     _______)_                                   hundpris.c                 //
 //  .-'---------|	By: Ferry Ras                                             //
 // ( C|/\GitHub/|                                                             //
 //  '-./\f-ras\/|	E-mail:     ferryras@gmail.com                            //
